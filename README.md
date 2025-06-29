@@ -79,15 +79,20 @@ Proyek ini merupakan tugas akhir mata kuliah Kecerdasan Buatan di Institut Tekno
 
 ---
 
-## 🗂️ Struktur Folder
-
+🗂️ Struktur Folder
 UAS-KecerdasanBuatan/
-├── README.md # Deskripsi proyek (file ini)
-├── notebook_model.ipynb # Notebook utama untuk analisis dan modeling
-├── uas_ai.pdf # File laporan akhir
-├── data/
-│ ├── jurnal.pdf # Kumpulan 5 jurnal pendukung
-│ └── heart_disease_data.csv # Dataset utama
+
+README.md → Deskripsi proyek
+
+notebook_model.ipynb → Notebook utama untuk analisis dan modeling
+
+uas_ai.pdf → File laporan akhir
+
+data/
+
+jurnal.pdf → Kumpulan 5 jurnal pendukung
+
+heart_disease_data.csv → Dataset utama
 
 
 
