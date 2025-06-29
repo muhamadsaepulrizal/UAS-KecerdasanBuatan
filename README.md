@@ -1,97 +1,102 @@
 # UAS-KecerdasanBuatan
 
-🩺 Prediksi Penyakit Jantung Menggunakan Random Forest
-Proyek ini merupakan tugas akhir mata kuliah Kecerdasan Buatan di Institut Teknologi Garut. Tujuannya adalah membangun model prediksi penyakit jantung berdasarkan data medis menggunakan algoritma Random Forest pada dataset UCI Cleveland.
+# 🩺 Prediksi Penyakit Jantung Menggunakan Random Forest
 
-📊 Dataset
-Sumber: Heart Disease UCI - Kaggle
+Proyek ini merupakan tugas akhir mata kuliah Kecerdasan Buatan di Institut Teknologi Garut. Tujuan utama dari proyek ini adalah membangun model klasifikasi untuk memprediksi potensi penyakit jantung pada pasien berdasarkan data klinis, menggunakan algoritma Random Forest pada dataset UCI Cleveland.
 
-Dataset yang digunakan: heart_disease_data.csv
+---
 
-Jumlah data: 606 baris × 14 kolom
+## 📊 Dataset
 
-Fitur yang tersedia meliputi: usia, jenis kelamin, tekanan darah istirahat, kolesterol, detak jantung maksimal, dan lain-lain
+- Sumber: [Heart Disease UCI – Kaggle](https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset)
+- Dataset yang digunakan: `heart_disease_data.csv`
+- Jumlah data: 606 baris × 14 kolom
+- Fitur yang tersedia meliputi:
+  - Usia (`age`)
+  - Jenis kelamin (`sex`)
+  - Tekanan darah istirahat (`trestbps`)
+  - Kolesterol (`chol`)
+  - Detak jantung maksimal (`thalach`)
+  - Nyeri dada (`cp`)
+  - dan fitur lainnya
 
-🎯 Tujuan Proyek
-Memprediksi apakah seorang pasien berisiko mengidap penyakit jantung berdasarkan data klinis.
+---
 
-Membantu memberikan insight awal untuk proses skrining medis dengan model machine learning.
+## 🎯 Tujuan Proyek
 
-🔍 Tahapan Proyek
-Exploratory Data Analysis (EDA)
+- Memprediksi apakah seorang pasien berisiko mengidap penyakit jantung berdasarkan data klinis.
+- Memberikan insight awal untuk skrining penyakit jantung dengan bantuan model machine learning yang dapat diandalkan.
 
-Visualisasi histogram usia dan kolesterol
+---
 
-Bar chart distribusi kelas target
+## 🔍 Tahapan Proyek
 
-Heatmap korelasi antar fitur
+### 🧪 Exploratory Data Analysis (EDA)
+- Histogram: Distribusi usia pasien
+- Histogram: Distribusi kolesterol pasien
+- Bar chart: Distribusi kelas target (sehat vs sakit)
+- Heatmap korelasi antar fitur
 
-Data Preparation
+### 🧹 Data Preparation
+- Pemeriksaan nilai kosong (missing values)
+- One-hot encoding untuk fitur kategorikal
+- Normalisasi data numerik menggunakan MinMaxScaler
+- Split data menjadi train-test (80% : 20%)
 
-Pemeriksaan nilai kosong
+### ⚙️ Modeling
+- Algoritma: Random Forest Classifier
+- Hyperparameter tuning menggunakan GridSearchCV
+- Visualisasi feature importance
 
-One-hot encoding
+### 📈 Evaluation
+- Confusion matrix
+- Classification report:
+  - Accuracy
+  - Precision
+  - Recall
+  - F1-Score
 
-Normalisasi menggunakan MinMaxScaler
+---
 
-Split data train-test (80:20)
+## 🧠 Algoritma
 
-Modeling
+- Model: RandomForestClassifier
+- Library utama: scikit-learn
+- Parameter terbaik hasil tuning:
+  - n_estimators = 100
+  - max_depth = 5 atau None
+  - min_samples_split = 2
 
-Algoritma: Random Forest Classifier
+---
 
-Hyperparameter tuning dengan GridSearchCV
+## 🖼️ Visualisasi
 
-Visualisasi feature importance
+- 📊 Histogram: Distribusi usia & kolesterol
+- 📊 Bar chart: Distribusi target (0 = sehat, 1 = sakit)
+- 🔥 Heatmap: Korelasi antar fitur
+- ✅ Confusion matrix
+- 🌿 Feature importance (kontribusi tiap fitur)
 
-Evaluation
+---
 
-Confusion matrix
-
-Classification report (accuracy, precision, recall, f1-score)
-
-Accuracy akhir model: 98.36%
-
-🧠 Algoritma
-Model: RandomForestClassifier
-
-Library utama: scikit-learn
-
-Parameter terbaik:
-
-n_estimators = 100
-
-max_depth = 5 atau None
-
-min_samples_split = 2
-
-🖼️ Visualisasi
-📌 Histogram: Distribusi usia & kolesterol pasien
-
-📌 Bar chart: Distribusi target (0 = sehat, 1 = sakit)
-
-📌 Heatmap korelasi antar fitur
-
-📌 Confusion matrix & feature importance
-
-🗂️ Struktur Folder
+## 🗂️ Struktur Folder
 
 UAS-KecerdasanBuatan/
-├── README.md                      # Deskripsi proyek (file ini)
-├── notebook_model.ipynb           # Notebook utama untuk analisis dan modeling
-├── uas_ai.pdf                     # File laporan
-├── data/                        
-│   ├── jurnal.pdf                 # 5 jurnal yang digunakan sebagai referensi
-│   └── heart_disease_data.csv     # dataset yang digunakan
+├── README.md # Deskripsi proyek (file ini)
+├── notebook_model.ipynb # Notebook utama untuk analisis dan modeling
+├── uas_ai.pdf # File laporan akhir
+├── data/
+│ ├── jurnal.pdf # Kumpulan 5 jurnal pendukung
+│ └── heart_disease_data.csv # Dataset utama
 
 
-🧾 Hasil Evaluasi
-Accuracy: 98.36%
+---
 
-Precision: 1.00 (positif), 0.97 (negatif)
+## 🧾 Hasil Evaluasi Model
 
-Recall: 0.97 (positif), 1.00 (negatif)
-
-F1-Score: 0.98
-
-
+| Metrik        | Kelas 0 (Sehat) | Kelas 1 (Sakit) |
+|---------------|------------------|------------------|
+| Precision     | 0.97             | 1.00             |
+| Recall        | 1.00             | 0.97             |
+| F1-Score      | 0.98             | 0.98             |
+| Accuracy      | ✅ 98.36%         |
