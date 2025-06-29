@@ -1,4 +1,6 @@
 # UAS-KecerdasanBuatan
+# Muhamad Saepul Rizal 2306142
+# Fathir Miftah Nursalim 2306135
 
 # 🩺 Prediksi Penyakit Jantung Menggunakan Random Forest
 
@@ -8,7 +10,7 @@ Proyek ini merupakan tugas akhir mata kuliah Kecerdasan Buatan di Institut Tekno
 
 ## 📊 Dataset
 
-- Sumber: [Heart Disease UCI – Kaggle](https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset)
+- Sumber: [Heart Disease UCI – Kaggle](https://www.kaggle.com/datasets/thisishusseinali/uci-heart-disease-data)
 - Dataset yang digunakan: `heart_disease_data.csv`
 - Jumlah data: 606 baris × 14 kolom
 - Fitur yang tersedia meliputi:
