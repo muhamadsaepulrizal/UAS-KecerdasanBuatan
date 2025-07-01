@@ -5,7 +5,7 @@
 
 # 🩺 Prediksi Penyakit Jantung Menggunakan Random Forest
 
-Proyek ini merupakan tugas akhir mata kuliah Kecerdasan Buatan di Institut Teknologi Garut. Tujuan utama dari proyek ini adalah membangun model klasifikasi untuk memprediksi potensi penyakit jantung pada pasien berdasarkan data klinis, menggunakan algoritma Random Forest pada dataset UCI Cleveland.
+Proyek ini merupakan tugas UAS mata kuliah Kecerdasan Buatan. Tujuan utama dari proyek ini adalah membangun model klasifikasi untuk memprediksi potensi penyakit jantung pada pasien berdasarkan data klinis, menggunakan algoritma Random Forest pada dataset UCI Cleveland.
 
 ---
 
